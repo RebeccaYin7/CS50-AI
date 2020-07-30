@@ -133,14 +133,6 @@ def minimax(board):
     if terminal(board):
         return None
     
-    """"numEmpty = 0
-    for i in range(3): 
-        for j in range(3): 
-            if board[i][j] == EMPTY:
-                numEmpty+=1
-    if numEmpty == 9: 
-        return (0,0)"""
-    
     if player(board) == O:
         val = math.inf 
         move = set()
